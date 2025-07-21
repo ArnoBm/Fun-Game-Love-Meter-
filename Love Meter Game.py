@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 print("💖 Welcome to the Love Meter Game 💖\n")
 
 # Input Section
-boy = input("Enter the Boyfriend's name: ")
-girl = input("Enter the Girlfriend's name: ")
+boy = input("Enter Your Name: ")
+girl = input("Enter Your Partner's Name: ")
 
 boy_bday = input(f"🎂 Enter {boy}'s birthday (YYYY-MM-DD): ")
 girl_bday = input(f"🎂 Enter {girl}'s birthday (YYYY-MM-DD): ")
