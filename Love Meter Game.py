@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 print("💖 Welcome to the Love Meter Game 💖\n")
 
 # Input Section
-boy = input("Enter Your Name: ")
-girl = input("Enter Your Partner's Name: ")
+boy = input("Enter the Boyfriend's name: ")
+girl = input("Enter the Girlfriend's name: ")
 
 boy_bday = input(f"🎂 Enter {boy}'s birthday (YYYY-MM-DD): ")
 girl_bday = input(f"🎂 Enter {girl}'s birthday (YYYY-MM-DD): ")
@@ -70,3 +70,15 @@ if boy_bday.month == girl_bday.month:
     print("🎉 Bonus: You both were born in the same month! Cosmic match!")
 if boy_bday.day == girl_bday.day:
     print("🎊 Whoa! You both share the same birthday! Rare connection!")
+
+# Fun feature: Who will cheat (for humor only)
+print("\n🤔 Detecting possible cheater...")
+time.sleep(1.5)
+cheat_possibility = random.choices(
+    [boy, girl, "Neither"], weights=[30, 30, 40], k=1
+)[0]
+
+if cheat_possibility == "Neither":
+    print("😇 Both are loyal! Trust level: 100% ❤️")
+else:
+    print(f"😱 Uh-oh! There is a chance {cheat_possibility} might cheat! (Just kidding... or not 😏)")
